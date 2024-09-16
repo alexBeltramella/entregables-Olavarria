@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.productos {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+.img-prod{
+    width: 200px;
+}
+
+.titulo-container {
+    padding: 10px;
+}
+
+
+.descripcion-container {
+    padding: 10px;
+}
+
+.precio-container {
+    padding: 10px;
+}
