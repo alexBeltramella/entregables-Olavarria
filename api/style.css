@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .contenedor-productos {
@@ -14,7 +15,8 @@
 .productos {
     padding: 20px;
     border: 1px solid black;
-}
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;}
 
 .img-container {
     display: flex;
@@ -35,4 +37,5 @@
 
 .precio-container {
     padding: 10px;
+    gap: 20px;
 }
