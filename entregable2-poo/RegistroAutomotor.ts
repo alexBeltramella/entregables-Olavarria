@@ -64,5 +64,17 @@ export class RegistroAutomotor {
         this.camiones = this.camiones.filter(camion => camion.getMarca() !== marca);
     }
 
+    //OBTENER VEHICULOS
+    obtenerMotos(): Motos[] {
+        return this.motos;
+    }
+
+    obtenerCamiones(): Camiones[] {
+        return this.camiones;
+    }
+
+    obtenerAutos(): Autos[] {
+        return this.autos;
+    }
 
 }
