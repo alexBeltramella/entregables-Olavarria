@@ -12,4 +12,13 @@ export class Camiones {
     getMarca():string {
         return this.marca;
     }
+
+    getAñoAntiguedad():number {
+        return this.añoAntiguedad;
+    }
+
+    
+    getValor():number {
+        return this.valor;
+    }
 }

@@ -17,16 +17,7 @@ export class Motos {
         return this.añoAntiguedad;
     }
 
-
-    getDescuento():number {
-        if(this.añoAntiguedad >= 20) {
-            return this.valor * 0.20;
-        }else {
-            return this.valor;
-        }
-    }
-
-
+    
     getValor():number {
         return this.valor;
     }

@@ -22,8 +22,15 @@ registro.agregarCamiones(camiones);
 registro.agregarCamiones(camiones2);
 registro.agregarAutos(autos);
 registro.agregarAutos(autos2);
+//VER MARCA, AÑO DE ANTIGUEDAD Y VALOR
+//MOTOS
+console.log("Motos: Marcas: ".concat(motos.getMarca(), ", ").concat(motos2.getMarca(), " | A\u00F1o de antiguedad: ").concat(motos.getAñoAntiguedad(), ", ").concat(motos2.getAñoAntiguedad(), " | Valor: ").concat(motos.getValor(), ", ").concat(motos.getValor()));
+//CAMIONES
+console.log("Camiones: Marcas: ".concat(camiones.getMarca(), ", ").concat(camiones2.getMarca(), " | A\u00F1o de antiguedad: ").concat(camiones.getAñoAntiguedad(), ", ").concat(camiones2.getAñoAntiguedad(), " | Valor: ").concat(camiones.getValor(), ", ").concat(camiones2.getValor()));
+//AUTOS
+console.log("Autos: Marcas: ".concat(autos.getMarca(), ", ").concat(autos2.getMarca(), " | A\u00F1o de antiguedad: ").concat(autos.getAñoAntiguedad(), ", ").concat(autos2.getAñoAntiguedad(), " | Valor: ").concat(autos.getValor(), ", ").concat(autos2.getValor()));
 //ver lista de cada vehiculo
-console.log("vehiculos del registro", registro.obtenerMotos().map(function (moto) { return moto.getMarca(); }), registro.obtenerCamiones().map(function (camion) { return camion.getMarca(); }), registro.obtenerAutos().map(function (auto) { return auto.getMarca(); }));
+console.log("vehiculos del registro: Motos:", registro.obtenerMotos().map(function (moto) { return moto.getMarca(); }), "Camiones", registro.obtenerCamiones().map(function (camion) { return camion.getMarca(); }), "Autos", registro.obtenerAutos().map(function (auto) { return auto.getMarca(); }));
 //ELIMINAR AUTO
 registro.eliminarAutos("Ford");
 console.log("vehiculos del registro despues de actualizacion:", registro.obtenerMotos().map(function (moto) { return moto.getMarca(); }), registro.obtenerCamiones().map(function (camion) { return camion.getMarca(); }), registro.obtenerAutos().map(function (auto) { return auto.getMarca(); }));

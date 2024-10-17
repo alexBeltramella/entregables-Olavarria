@@ -10,6 +10,12 @@ var Autos = /** @class */ (function () {
     Autos.prototype.getMarca = function () {
         return this.marca;
     };
+    Autos.prototype.getAñoAntiguedad = function () {
+        return this.añoAntiguedad;
+    };
+    Autos.prototype.getValor = function () {
+        return this.valor;
+    };
     return Autos;
 }());
 exports.Autos = Autos;

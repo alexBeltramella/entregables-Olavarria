@@ -29,14 +29,30 @@ registro.agregarCamiones(camiones2);
 registro.agregarAutos(autos);
 registro.agregarAutos(autos2);
 
+//VER MARCA, AÑO DE ANTIGUEDAD Y VALOR
+//MOTOS
+console.log(`Motos: Marcas: ${motos.getMarca()}, ${motos2.getMarca()} | Año de antiguedad: ${motos.getAñoAntiguedad()}, ${motos2.getAñoAntiguedad()} | Valor: ${motos.getValor()}, ${motos.getValor()}`);
+
+
+//CAMIONES
+console.log(`Camiones: Marcas: ${camiones.getMarca()}, ${camiones2.getMarca()} | Año de antiguedad: ${camiones.getAñoAntiguedad()}, ${camiones2.getAñoAntiguedad()} | Valor: ${camiones.getValor()}, ${camiones2.getValor()}`);
+
+//AUTOS
+console.log(`Autos: Marcas: ${autos.getMarca()}, ${autos2.getMarca()} | Año de antiguedad: ${autos.getAñoAntiguedad()}, ${autos2.getAñoAntiguedad()} | Valor: ${autos.getValor()}, ${autos2.getValor()}`);
+
+
+
+
 //ver lista de cada vehiculo
-console.log("vehiculos del registro", registro.obtenerMotos().map(moto => moto.getMarca()), registro.obtenerCamiones().map(camion => camion.getMarca()), registro.obtenerAutos().map(auto => auto.getMarca()));
+console.log("vehiculos del registro: Motos:", registro.obtenerMotos().map(moto => moto.getMarca()), "Camiones", registro.obtenerCamiones().map(camion => camion.getMarca()), "Autos", registro.obtenerAutos().map(auto => auto.getMarca()));
 
 
 //ELIMINAR AUTO
 registro.eliminarAutos("Ford");
 
-console.log("vehiculos del registro despues de actualizacion:", registro.obtenerMotos().map(moto => moto.getMarca()), registro.obtenerCamiones().map(camion => camion.getMarca()), registro.obtenerAutos().map(auto => auto.getMarca()));
+
+//REGISTRO DESPUES DE ELIMINAR AUTO
+console.log("vehiculos del registro despues de actualizacion: Motos:", registro.obtenerMotos().map(moto => moto.getMarca()), "Camiones", registro.obtenerCamiones().map(camion => camion.getMarca()), "Autos", registro.obtenerAutos().map(auto => auto.getMarca()));
 
 
 

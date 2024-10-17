@@ -10,6 +10,12 @@ var Camiones = /** @class */ (function () {
     Camiones.prototype.getMarca = function () {
         return this.marca;
     };
+    Camiones.prototype.getAñoAntiguedad = function () {
+        return this.añoAntiguedad;
+    };
+    Camiones.prototype.getValor = function () {
+        return this.valor;
+    };
     return Camiones;
 }());
 exports.Camiones = Camiones;
