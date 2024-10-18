@@ -5,7 +5,7 @@ var Camiones_1 = require("./Camiones");
 var Autos_1 = require("./Autos");
 var RegistroAutomotor_1 = require("./RegistroAutomotor");
 //CREO LAS MOTOS
-var motos = new Motos_1.Motos("kawasaki", 21, 10.000);
+var motos = new Motos_1.Motos("kawasaki", 21, 10000);
 var motos2 = new Motos_1.Motos("corven", 15, 20.000);
 //CREO CAMIONES
 var camiones = new Camiones_1.Camiones("Scania", 23, 1000);
@@ -24,7 +24,7 @@ registro.agregarAutos(autos);
 registro.agregarAutos(autos2);
 //VER MARCA, AÑO DE ANTIGUEDAD Y VALOR
 //MOTOS
-console.log("Motos: Marcas: ".concat(motos.getMarca(), ", ").concat(motos2.getMarca(), " | A\u00F1o de antiguedad: ").concat(motos.getAñoAntiguedad(), ", ").concat(motos2.getAñoAntiguedad(), " | Valor: ").concat(motos.getValor(), ", ").concat(motos.getValor()));
+console.log("Motos: Marcas: ".concat(motos.getMarca(), ", ").concat(motos2.getMarca(), " | A\u00F1o de antiguedad: ").concat(motos.getAñoAntiguedad(), ", ").concat(motos2.getAñoAntiguedad(), " | Valor: ").concat(motos.getValor(), ", ").concat(motos.getValor(), ", \"Valor con descuento:\" ").concat(motos.obtenerDescuento()));
 //CAMIONES
 console.log("Camiones: Marcas: ".concat(camiones.getMarca(), ", ").concat(camiones2.getMarca(), " | A\u00F1o de antiguedad: ").concat(camiones.getAñoAntiguedad(), ", ").concat(camiones2.getAñoAntiguedad(), " | Valor: ").concat(camiones.getValor(), ", ").concat(camiones2.getValor()));
 //AUTOS
@@ -33,4 +33,5 @@ console.log("Autos: Marcas: ".concat(autos.getMarca(), ", ").concat(autos2.getMa
 console.log("vehiculos del registro: Motos:", registro.obtenerMotos().map(function (moto) { return moto.getMarca(); }), "Camiones", registro.obtenerCamiones().map(function (camion) { return camion.getMarca(); }), "Autos", registro.obtenerAutos().map(function (auto) { return auto.getMarca(); }));
 //ELIMINAR AUTO
 registro.eliminarAutos("Ford");
-console.log("vehiculos del registro despues de actualizacion:", registro.obtenerMotos().map(function (moto) { return moto.getMarca(); }), registro.obtenerCamiones().map(function (camion) { return camion.getMarca(); }), registro.obtenerAutos().map(function (auto) { return auto.getMarca(); }));
+//REGISTRO DESPUES DE ELIMINAR AUTO
+console.log("vehiculos del registro despues de actualizacion: Motos:", registro.obtenerMotos().map(function (moto) { return moto.getMarca(); }), "Camiones", registro.obtenerCamiones().map(function (camion) { return camion.getMarca(); }), "Autos", registro.obtenerAutos().map(function (auto) { return auto.getMarca(); }));

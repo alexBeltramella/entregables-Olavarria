@@ -4,7 +4,7 @@ import { Autos } from "./Autos";
 import { RegistroAutomotor } from "./RegistroAutomotor";
 
 //CREO LAS MOTOS
-const motos = new Motos("kawasaki", 21, 10.000);
+const motos = new Motos("kawasaki", 21, 10000);
 const motos2 = new Motos("corven", 15, 20.000);
 
 //CREO CAMIONES
@@ -31,7 +31,7 @@ registro.agregarAutos(autos2);
 
 //VER MARCA, AÑO DE ANTIGUEDAD Y VALOR
 //MOTOS
-console.log(`Motos: Marcas: ${motos.getMarca()}, ${motos2.getMarca()} | Año de antiguedad: ${motos.getAñoAntiguedad()}, ${motos2.getAñoAntiguedad()} | Valor: ${motos.getValor()}, ${motos.getValor()}`);
+console.log(`Motos: Marcas: ${motos.getMarca()}, ${motos2.getMarca()} | Año de antiguedad: ${motos.getAñoAntiguedad()}, ${motos2.getAñoAntiguedad()} | Valor: ${motos.getValor()}, ${motos.getValor()}, "Valor con descuento:" ${motos.obtenerDescuento()}`);
 
 
 //CAMIONES
