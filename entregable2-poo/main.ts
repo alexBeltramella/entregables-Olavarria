@@ -31,7 +31,7 @@ registro.agregarAutos(autos2);
 
 //VER MARCA, AÑO DE ANTIGUEDAD Y VALOR
 //MOTOS
-console.log(`Motos: Marcas: ${motos.getMarca()}, ${motos2.getMarca()} | Año de antiguedad: ${motos.getAñoAntiguedad()}, ${motos2.getAñoAntiguedad()} | Valor: ${motos.getValor()}, ${motos.getValor()}, "Valor con descuento:" ${motos.obtenerDescuento()}`);
+// console.log(`Motos: Marcas: ${motos.getMarca()}, ${motos2.getMarca()} | Año de antiguedad: ${motos.getAñoAntiguedad()}, ${motos2.getAñoAntiguedad()} | Valor: ${motos.getValor()}, ${motos.getValor()}, "Valor con descuento:" ${motos.obtenerDescuento()}`);
 
 
 //CAMIONES

@@ -14,11 +14,13 @@ var Motos = /** @class */ (function () {
         return this.añoAntiguedad;
     };
     Motos.prototype.obtenerDescuento = function () {
-        if (this.añoAntiguedad >= 20) {
-            return this.valor * 0.50;
-        }
-        else {
-            return this.valor;
+        for (var i = 0; this.getAñoAntiguedad.length >= 20, i++;) {
+            if (this.añoAntiguedad >= 20) {
+                return this.valor * 0.50;
+            }
+            else {
+                return this.valor;
+            }
         }
     };
     Motos.prototype.getValor = function () {

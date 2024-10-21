@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Mago_1 = require("./Mago");
+var Luchador_1 = require("./Luchador");
+var Arquero_1 = require("./Arquero");
+var Dragon_1 = require("./Dragon");
+var mago1 = new Mago_1.Mago("Nexus");
+var luchador1 = new Luchador_1.Luchador("Felius");
+var arquero1 = new Arquero_1.Arquero("Tenz");
+var dragon1 = new Dragon_1.Dragon("Drogo");
+mago1.atacar();
+dragon1.atacar();
+mago1.defender();
+mago1.evolucionar();
+luchador1.atacar();
+luchador1.defender();
+arquero1.atacar();
+arquero1.defender();

@@ -77,4 +77,5 @@ export class RegistroAutomotor {
         return this.autos;
     }
 
+
 }
