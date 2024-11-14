@@ -22,3 +22,4 @@ export class Camiones {
         return this.valor;
     }
 }
+console.log();
